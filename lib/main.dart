@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:provider_state_management/provider/model.dart';
-import 'package:provider_state_management/routes/rouotes.dart';
-import 'package:provider/provider.dart';
+import 'package:provider_state_management/resurs/import.dart';
 
 void main() {
   runApp(

@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:provider_state_management/provider/users.dart';
+import 'package:provider_state_management/resurs/import.dart';
 
 class Model extends ChangeNotifier {
   List<User> fullName = [];

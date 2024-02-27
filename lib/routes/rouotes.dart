@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:provider_state_management/screens/one_screen.dart';
-import 'package:provider_state_management/screens/two_screen.dart';
+import 'package:provider_state_management/resurs/import.dart';
 
 class RoutesPage {
   Route getRoutes(RouteSettings routeSettings) {

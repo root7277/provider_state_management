@@ -1,0 +1,9 @@
+export 'package:flutter/material.dart';
+export 'package:provider_state_management/provider/model.dart';
+export 'package:provider_state_management/routes/rouotes.dart';
+export 'package:provider/provider.dart';
+export 'package:provider_state_management/screens/one_screen.dart';
+export 'package:provider_state_management/screens/two_screen.dart';
+export 'package:provider_state_management/provider/users.dart';
+export 'package:provider_state_management/resurs/app_color.dart';
+export 'package:provider_state_management/resurs/app_style.dart';

@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:provider_state_management/provider/model.dart';
-import 'package:provider_state_management/resurs/app_color.dart';
-import 'package:provider_state_management/resurs/app_style.dart';
+import 'package:provider_state_management/resurs/import.dart';
 
 class OneScreen extends StatefulWidget {
   const OneScreen({super.key});

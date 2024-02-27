@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:provider_state_management/resurs/import.dart';
 
 abstract class AppColors {
   static Color primaryColor = Colors.green;
