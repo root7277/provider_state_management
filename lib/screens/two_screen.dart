@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_state_management/provider/model.dart';
 import 'package:provider_state_management/provider/users.dart';
+import 'package:provider_state_management/resurs/app_color.dart';
+import 'package:provider_state_management/resurs/app_style.dart';
 
 class TwoScreen extends StatefulWidget {
   const TwoScreen({super.key});
@@ -17,7 +19,8 @@ class _TwoScreenState extends State<TwoScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Two Screen'),
+        backgroundColor: AppColors.primaryColor,
+        title: Text('Two Screen', style: AppStyles.appBarStyle),
       ),
       body: Center(
         child: Column(
@@ -43,8 +46,7 @@ class _TwoScreenState extends State<TwoScreen> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           context.read<Model>().getAddUser(User(name: controller_1.text, phone: controller_2.text));
-          Navigator.pushNamed(context, '/tree');
-          // Navigator.pop(context);
+          Navigator.pop(context);
         },
         child: const Icon(Icons.add),
       ),

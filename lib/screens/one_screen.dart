@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_state_management/provider/model.dart';
-import 'package:provider_state_management/screens/two_screen.dart';
+import 'package:provider_state_management/resurs/app_color.dart';
+import 'package:provider_state_management/resurs/app_style.dart';
 
 class OneScreen extends StatefulWidget {
   const OneScreen({super.key});
@@ -17,7 +18,8 @@ class _OneScreenState extends State<OneScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('One Screen', style: TextStyle(fontSize: 30)),
+        backgroundColor: AppColors.primaryColor,
+        title: Text('One Screen', style: AppStyles.appBarStyle),
       ),
       body: Consumer<Model>(
         builder: (context, value, child) {
