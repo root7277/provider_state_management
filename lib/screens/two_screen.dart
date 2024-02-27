@@ -43,7 +43,8 @@ class _TwoScreenState extends State<TwoScreen> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           context.read<Model>().getAddUser(User(name: controller_1.text, phone: controller_2.text));
-          Navigator.pop(context);
+          Navigator.pushNamed(context, '/tree');
+          // Navigator.pop(context);
         },
         child: const Icon(Icons.add),
       ),

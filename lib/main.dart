@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider_state_management/provider/model.dart';
-import 'package:provider_state_management/screens/one_screen.dart';
+import 'package:provider_state_management/routes/rouotes.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -17,9 +17,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    RoutesPage route = RoutesPage();
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: OneScreen(),
+      initialRoute: '/',
+      onGenerateRoute: (settings) => route.getRoutes(settings),
     );
   }
 }

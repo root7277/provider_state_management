@@ -116,7 +116,7 @@ class _OneScreenState extends State<OneScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => const TwoScreen()));
+          Navigator.pushNamed(context, '/two');
         },
         child: const Icon(Icons.add),
       ),
